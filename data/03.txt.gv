@@ -1,0 +1,9 @@
+graph trains_config { 
+  node[shape="rect"] 
+  0[label="S0
+P0(>S1,1), P2(>S1,1), P6(>S1,3)
+Q0(10), Q1(8)"];
+  1[label="S1
+P1(>S0,5), P3(>S0,6), P4(>S0,6), P5(>S0,1), P7(>S0,1), P8(>S0,1)"];
+  0 -- 1 [label="2"]
+}

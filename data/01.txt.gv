@@ -1,0 +1,33 @@
+graph trains_config { 
+  node[shape="rect"] 
+  0[label="S0
+P4(>S5,8), P7(>S8,3)
+Q1(9), Q2(8), Q3(13)"];
+  1[label="S1"];
+  2[label="S2
+P1(>S5,1), P6(>S3,7)"];
+  3[label="S3
+Q4(12)"];
+  4[label="S4
+P5(>S2,1), P8(>S2,1)"];
+  5[label="S5"];
+  6[label="S6
+P0(>S8,7), P2(>S8,7), P3(>S5,1)
+Q0(12)"];
+  7[label="S7"];
+  8[label="S8"];
+  0 -- 1 [label="9"]
+  0 -- 2 [label="5"]
+  8 -- 0 [label="10"]
+  1 -- 2 [label="5"]
+  2 -- 3 [label="4"]
+  3 -- 4 [label="8"]
+  3 -- 6 [label="4"]
+  3 -- 7 [label="4"]
+  4 -- 5 [label="1"]
+  4 -- 6 [label="3"]
+  4 -- 7 [label="1"]
+  5 -- 6 [label="5"]
+  6 -- 7 [label="4"]
+  7 -- 8 [label="5"]
+}

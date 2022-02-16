@@ -1,0 +1,54 @@
+graph trains_config { 
+  node[shape="rect"] 
+  0[label="S0
+P2(>S3,7), P9(>S8,1)"];
+  1[label="S1
+P5(>S14,4)"];
+  2[label="S2
+Q1(11)"];
+  3[label="S3
+Q2(11)"];
+  4[label="S4
+Q3(14)"];
+  5[label="S5"];
+  6[label="S6
+P0(>S1,9)"];
+  7[label="S7"];
+  8[label="S8"];
+  9[label="S9
+P4(>S4,11), P8(>S0,1)"];
+  10[label="S10
+P1(>S0,5), P7(>S3,12)"];
+  11[label="S11
+Q0(6)"];
+  12[label="S12"];
+  13[label="S13"];
+  14[label="S14
+P3(>S0,3)"];
+  15[label="S15
+P6(>S1,8)"];
+  0 -- 1 [label="1"]
+  0 -- 2 [label="5"]
+  0 -- 3 [label="9"]
+  15 -- 0 [label="7"]
+  1 -- 2 [label="8"]
+  1 -- 4 [label="1"]
+  1 -- 5 [label="6"]
+  2 -- 3 [label="5"]
+  2 -- 4 [label="9"]
+  3 -- 4 [label="9"]
+  4 -- 5 [label="6"]
+  5 -- 6 [label="3"]
+  6 -- 7 [label="7"]
+  7 -- 8 [label="1"]
+  7 -- 10 [label="10"]
+  7 -- 12 [label="7"]
+  8 -- 9 [label="6"]
+  8 -- 10 [label="10"]
+  9 -- 10 [label="10"]
+  10 -- 11 [label="1"]
+  11 -- 12 [label="9"]
+  12 -- 13 [label="6"]
+  13 -- 14 [label="9"]
+  14 -- 15 [label="1"]
+}

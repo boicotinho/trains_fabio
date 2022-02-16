@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "${default}"
+            ],
+            "defines": [
+                "_DEBUG=1",
+                "DEBUG=1",
+                "VALIDATE=1",
+                "BUILD_TYPE=\"Debug\""
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "forcedInclude": [
+                "${default}"
+            ],
+            "compilerArgs": [
+                "-march=native",
+                "-Wdeprecated",
+                "-W",
+                "-Wall",
+                "-Wpointer-arith",
+                "-Wno-uninitialized",
+                "-Wno-unused",
+                "-Wno-sign-compare",
+                "-Wno-comment",
+                "-Wno-unknown-pragmas",
+                "-Wno-unused-parameter",
+                "-Wno-invalid-offsetof",
+                "-no-integrated-cpp",
+                "-fno-strict-aliasing",
+                "-Werror",
+                "-Werror=return-type",
+                "-fabi-version=0"
+            ],
+            "cppStandard": "c++11",
+            "cStandard": "c11",
+            "intelliSenseMode": "linux-gcc-x64", // ${default}
+            "compileCommands": "${default}",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

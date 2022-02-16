@@ -1,0 +1,36 @@
+digraph G {
+0[label="dax.h"];
+1[label="yow.h"];
+2[label="boz.h"];
+3[label="zow.h"];
+4[label="foo.cpp"];
+5[label="foo.o"];
+6[label="bar.cpp[]\nQ1[P1,P2,P3]\nQ2[P4,P5]"];
+7[label="B[P7]\nQ3[P6]"];
+8[label="libfoobar.a"];
+9[label="zig.cpp"];
+10[label="zig.o"];
+11[label="zag.cpp"];
+12[label="zag.o"];
+13[label="libzigzag.a"];
+14[label=killerapp];
+0->4 ;
+0->6 ;
+0->1 ;
+1->6 ;
+1->11 ;
+2->6 ;
+2->9 ;
+2->11 ;
+3->4 ;
+4->5 ;
+5->8 ;
+6->7 [label="8\nQ4[P8,P9] 3/8\nQ5[P10] 7/8"];
+7->8 ;
+8->13 ;
+9->10 ;
+10->13 ;
+11->12 ;
+12->13 ;
+13->14 ;
+}

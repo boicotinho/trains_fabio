@@ -1,0 +1,21 @@
+graph A {
+  rankdir=LR
+size="5,3"
+ratio="fill"
+edge[style="bold"]
+node[shape="circle"]
+0 -- 1[label=9]
+0 -- 2[label=5]
+0 -- 8[label=10]
+1 -- 2[label=5]
+2 -- 3[label=4]
+3 -- 4[label=8]
+3 -- 6[label=4]
+3 -- 7[label=4]
+4 -- 5[label=1]
+4 -- 6[label=3]
+4 -- 7[label=1]
+5 -- 6[label=5]
+6 -- 7[label=4]
+7 -- 8[label=5]
+}

@@ -1,0 +1,18 @@
+// example input
+3 // number of stations
+A // station name
+B // station name
+C // station name
+
+2 // number of routes
+E1,A,B,3 // route from A to B that takes 3 units of time
+E2,B,C,1 // route from B to C that takes 1 unit of time
+
+1 // number of deliveries to be performed
+P1,A,C,5 // package P1 with weight 5 located currently at station A that must be delivered to station C
+1 // number of trains
+Q1,B,6 // train T1 with capacity 6 located at station B
+
+// example output
+@0, n = B, q = Q1, load= { }, drop= { }, moving B->A:E1 arr 3
+@3, n = A, q = Q1, load= { D1 }, drop= { }, moving B->C:E2 arr 4

@@ -1,0 +1,14 @@
+graph trains_config { 
+  rankdir=LR 
+  node[shape="rect"] 
+  size="4,3" 
+  ratio="fill" 
+  edge[style="bold"] 
+  0[label="A
+P1(>C,5)"];
+  1[label="B
+Q1(6)"];
+  2[label="C"];
+  0 -- 1 [label="3"]
+  1 -- 2 [label="1"]
+}
